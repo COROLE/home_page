@@ -5,6 +5,7 @@ import Header from "../components/Header";
 import Footer from "@/components/Footer";
 import Symbol from "@/components/Symbol";
 import Head from "next/head"
+import SizedBox from "@/components/SizedBox";
 
 const lilitaOne = Lilita_One({ subsets: ["latin"], weight: ["400"] });
 
@@ -23,6 +24,7 @@ export default function RootLayout({children}: {children: React.ReactNode}) {
    
       <body className={lilitaOne.className}>
         <Header />
+        <SizedBox />
         {children}
         <Symbol />
         <Footer />

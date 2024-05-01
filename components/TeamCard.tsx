@@ -13,8 +13,8 @@ const teamMembers = [
 
 const TeamCard = () => {
     return (
-      <div className="bg-gray-900 text-white py-10 rounded-b-3xl">
-        <div className="container mx-auto px-4 my-20">
+      <div className="bg-gray-900 text-white py-20 rounded-b-3xl">
+        <div className="container mx-auto px-4 mt-20">
           <h2 className="text-3xl font-bold text-center mb-20">Our Team</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 ">
             {teamMembers.map(member => (
@@ -30,8 +30,8 @@ const TeamCard = () => {
                 </div>
               </FadeIn>
             ))}
- 
-            <div className='mb-10'></div>
+ <div className='mb-10'></div>
+            
           </div>
         </div>
       </div>

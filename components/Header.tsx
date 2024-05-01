@@ -1,15 +1,12 @@
-"use client";
-
+"use client"
 import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
-
 import { headerListItems } from "../constants";
 import { usePathname } from "next/navigation";
 import { IoCloseSharp } from "react-icons/io5";
 import { motion, AnimatePresence } from "framer-motion";
 import coroleMinIcon from "../public/coroleIcon/coroleMinIcon.png";
-
 
 interface HeaderListItem {
   _id: string;
@@ -21,13 +18,28 @@ function Header() {
   const [active, setActive] = useState<string | undefined>(undefined);
   const pathName = usePathname();
   const [showMenu, setShowMenu] = useState<boolean>(false);
+  const [lastScrollY, setLastScrollY] = useState(0);
+  const [headerClass, setHeaderClass] = useState("top-0");
 
   useEffect(() => {
     setActive(pathName);
-  }, [pathName]);
+    const handleScroll = () => {
+      const currentScrollY = window.scrollY;
+      if (currentScrollY > lastScrollY) {
+        setHeaderClass("top-[-100px]"); // スクロールダウン時にヘッダーを隠す
+      } else {
+        setHeaderClass("top-0 opacity-100"); // スクロールアップ時にヘッダーを表示
+      }
+      setLastScrollY(currentScrollY);
+    };
+    window.addEventListener("scroll", handleScroll, { passive: true });
+
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, [lastScrollY, pathName]);
+
 
   return (
-    <div className="w-full h-20  bg-white p-5">
+    <div className={`w-full h-20 bg-white p-5 fixed ${headerClass} left-0 z-50 transition-all duration-300`}>
       <div className="h-full max-w-screen-2xl mx-auto flex items-center justify-between">
         <Link href={"/"} className="relative group overflow-hidden">
           <p className="text-2xl font-bold">Inc.COROLE</p>
