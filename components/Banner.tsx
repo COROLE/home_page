@@ -4,7 +4,7 @@ import React from "react";
 import Container from "./Container";
 import Image from "next/image";
 import caveChildren from "../public/coroleIcon/caveChildren.webp";
-import forestChildren from "../public/coroleIcon/forestChildren.webp";
+import spaceChildren from "../public/coroleIcon/spaceChildren.webp";
 import flyingChildren from "../public/coroleIcon/flyingChildren.webp";
 import coroleMinIcon from "../public/coroleIcon/coroleMinIcon.png";
 
@@ -66,9 +66,9 @@ const Banner = () => {
                 transition={{ duration: 0.8 }}
               >
                 <Image
-                  src={forestChildren}
-                  alt="forestChildren"
-                  className="w-60 rounded-full object-cover shadow-xl transform -rotate-12"
+                  src={spaceChildren}
+                  alt="spaceChildren"
+                  className="w-60 rounded-full object-cover shadow-xl transform -rotate-12 mb-3"
                 />
               </motion.div>
               <motion.div
