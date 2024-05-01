@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+
+  background-image: linear-gradient(to right, #FFC0CB, #FFD700, #ADD8E6, #E0FFFF); /* Updated to a cute pastel color gradient */
+  background-size: cover; /* Changed to cover for a more responsive full background */
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh; /* Ensure full vertical coverage */
+}
+
+
+
+
