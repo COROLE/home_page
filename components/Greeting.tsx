@@ -15,7 +15,7 @@ const Greeting = () => {
           alt="greeting"
           width={500} // Increased width from 300 to 500
           height={500} // Increased height from 300 to 500
-          className="rounded-3xl"
+          className="rounded-3xl "
         />
       </FadeIn>
       <FadeIn>
