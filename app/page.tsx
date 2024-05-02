@@ -1,5 +1,6 @@
 import Banner from "@/components/Banner";
 import Content from "@/components/Content";
+import SizedBox from "@/components/SizedBox";
 
 
 
@@ -8,6 +9,7 @@ export default function Home() {
     <>
       <div>
         <Banner />
+        <SizedBox />
         <Content />
         
       </div>
