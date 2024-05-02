@@ -53,7 +53,10 @@ const Footer = () => {
             <Image
             src={coroleMinIcon}
             alt="coroleMinIcon"
+            width={100}  // 幅を指定
+            height={100}
             className="w-20 rounded-2xl object-cover transform hover:scale-105 transition-transform duration-300"
+            priority
           />
           </div>
         </div>

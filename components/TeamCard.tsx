@@ -21,7 +21,7 @@ const TeamCard = () => {
               <FadeIn key={member.name}> {/* FadeIn コンポーネントで各カードをラップ */}
                 <div className={`p-4 rounded-xl shadow-xl text-center ${member.color} transform hover:scale-105 transition-transform duration-300`}>
                   <div className="w-32 h-32 rounded-full overflow-hidden mx-auto mb-4 border-4 border-white">
-                    <Image src={member.image} alt={member.name} width={128} height={128} className="object-cover"/>
+                    <Image src={member.image} alt={member.name} width={128} height={128} className="object-cover" priority/>
                   </div>
                   <h4 className="text-sm">{member.role}</h4>
                   <h3 className="font-semibold">{member.name}</h3>

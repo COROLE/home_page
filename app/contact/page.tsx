@@ -77,6 +77,7 @@ const ContactPage = () => {
                   width={300} // Changed width from 100 to 50
                   height={300} // Changed height from 100 to 50
                   className="object-cover"
+                  priority
                 />
 
       </div>

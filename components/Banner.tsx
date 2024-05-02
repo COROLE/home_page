@@ -15,7 +15,7 @@ import FadeIn from "./FadeIn";
 
 const Banner = () => {
   return (
-    <div className="bg-gradient-to-r from-emerald-500 to-lime-500 w-full rounded-bl-3xl rounded-br-3xl relative px-4 py-10 shadow-lg">
+    <div className="bg-gradient-to-r from-emerald-500 to-lime-500 w-full rounded-bl-3xl rounded-br-3xl relative px-4 py-10 shadow-lg" style={{ position: 'sticky', top: 0, zIndex: 10 }}>
         
       <Container>
         <div className="text-white grid md:grid-cols-2 gap-20 place-items-center">
@@ -34,6 +34,7 @@ const Banner = () => {
             width={100}
             height={100}
             className="rounded-2xl object-cover transform hover:scale-105 transition-transform duration-300"
+            priority 
           />
             </FadeIn>
             <FadeIn>
@@ -57,6 +58,7 @@ const Banner = () => {
                 src={flyingChildren}
                 alt="caveChildren"
                 className="w-60 rounded-full object-cover shadow-xl transform rotate-12"
+                priority
               />
             </motion.div>
             <div className="flex flex-col gap-7">
@@ -69,6 +71,7 @@ const Banner = () => {
                   src={spaceChildren}
                   alt="spaceChildren"
                   className="w-60 rounded-full object-cover shadow-xl transform -rotate-12 mb-3"
+                  priority
                 />
               </motion.div>
               <motion.div
@@ -80,6 +83,7 @@ const Banner = () => {
                   src={caveChildren}
                   alt="caveChildren"
                   className="w-60 rounded-full object-cover shadow-xl transform scale-110"
+                  
                 />
               </motion.div>
             </div>

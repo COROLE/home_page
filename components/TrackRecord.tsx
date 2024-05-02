@@ -20,7 +20,7 @@ const TrackRecord = () => {
           achievement.reverse ? 
             <FadeInFromRight key={achievement.id}>
               <div className="flex flex-col lg:flex-col items-center justify-between gap-10 p-4 bg-gray-200 rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300">
-                <Image src={achievement.image} alt={achievement.title} width={300} height={200} className="rounded-lg object-cover" />
+                <Image src={achievement.image} alt={achievement.title} width={300} height={200} className="rounded-lg object-cover" priority/>
                 <div className="text-gray-700 text-lg">
                   <h3 className="text-xl">{achievement.title}</h3>
                   <p className='font-sans my-2'>{achievement.description}</p>

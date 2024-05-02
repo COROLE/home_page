@@ -25,10 +25,10 @@ function Header() {
     setActive(pathName);
     const handleScroll = () => {
       const currentScrollY = window.scrollY;
-      if (currentScrollY > lastScrollY) {
-        setHeaderClass("top-[-100px]"); // スクロールダウン時にヘッダーを隠す
+      if (currentScrollY > lastScrollY && currentScrollY > 0) { // Add check for currentScrollY > 0
+        setHeaderClass("top-[-100px]"); // Hide header on scroll down
       } else {
-        setHeaderClass("top-0 opacity-100"); // スクロールアップ時にヘッダーを表示
+        setHeaderClass("top-0 opacity-100"); // Show header on scroll up or at the top of the page
       }
       setLastScrollY(currentScrollY);
     };
@@ -89,10 +89,13 @@ function Header() {
             </Link>
             ))}
             <Image
-            src={coroleMinIcon}
-            alt="coroleMinIcon"
-            className="w-20 rounded-2xl object-cover mt-4 transform hover:scale-105 transition-transform duration-300"
-          />
+  src={coroleMinIcon}
+  alt="coroleMinIcon"
+  width={80}  // Tailwindのw-20に相当する幅をピクセルで指定
+  height={80} // アスペクト比を保つために高さも同じ値に
+  className="rounded-2xl object-cover mt-4 transform hover:scale-105 transition-transform duration-300"
+  priority
+/>
           </ul></motion.div>
         </div>
         )}

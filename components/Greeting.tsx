@@ -13,23 +13,25 @@ const Greeting = () => {
         <Image
           src={greeting}
           alt="greeting"
-          width={500} // Increased width from 300 to 500
-          height={500} // Increased height from 300 to 500
-          className="rounded-3xl "
+          width={400}
+          height={500}
+          className="rounded-3xl shadow-xl md:px-3 md:rounded-lg"
+          priority
         />
       </FadeIn>
       <FadeIn>
-    <div className='flex flex-col text-white items-center justify-center font-sans font-semibold'>
+    <div className='flex flex-col text-white items-center justify-center font-sans font-semibold '>
 
-      <p className=' mt-10'>(株)COROLE 代表取締役CEO/ 関西大学商学部</p>
-      <p className='mt-1'>上村 温大</p>
+      <p className='mt-10 px-5'>(株)COROLE 代表取締役CEO/ 関西大学商学部</p>
+      <p className='mt-1  
+      '>上村 温大</p>
     </div>
       </FadeIn>
 
       <FadeIn>
-        <div className="flex flex-col items-center justify-center gap-10 p-4 font-sans">
+        <div className="flex flex-col items-center justify-center gap-10 p-4 font-sans sm:px-3">
           <div className="w-full text-center">
-            <p className="text-white text-lg mt-10 font-normal">
+            <p className="text-white text-lg mt-10 font-sans">
               私自身、幼少期の頃に自分の世界観というものをはっきりと持っていました。<br />
               頻繁に幻想キャラと戦闘しており、その話をよく親に持ちかけたものです笑<br />
               しかし、自分の夢ある世界観はイマイチ皆に理解されず、<br />

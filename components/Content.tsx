@@ -32,13 +32,13 @@ const activities = [
 
 const Content = () => {
   return (
-    <div className="bg-gradient-to-r from-blue-200 via-blue-100 to-blue-300 w-full rounded-bl-3xl rounded-3xl relative px-4 pt-10 shadow-lg mt-5">
+    <div className="bg-gradient-to-r from-blue-200 via-blue-100 to-blue-300 w-full rounded-bl-3xl rounded-3xl relative px-4 pt-10 shadow-lg mt-5" style={{ position: 'sticky', top: '100vh', zIndex: 10 }}>
       {activities.map((activity) => (
         activity.reverse ? 
           <FadeInFromRight key={activity.id}>
             <div className="flex flex-row-reverse items-center justify-between gap-10 p-4 font-sans">
               <div className="w-1/2">
-                <Image src={activity.image} alt="Activity Image" width={500} height={300} className="rounded-full object-cover shadow-lg" />
+                <Image src={activity.image} alt="Activity Image" width={500} height={300} className="rounded-full object-cover shadow-lg" priority />
               </div>
               <div className="w-1/2 text-gray-700 text-lg font-semibold">
                 {activity.text}
@@ -49,7 +49,7 @@ const Content = () => {
           <FadeInFromLeft key={activity.id}>
             <div className="flex flex-row items-center justify-between gap-10 p-4 font-sans">
               <div className="w-1/2">
-                <Image src={activity.image} alt="Activity Image" width={500} height={300} className="rounded-full object-cover shadow-lg" />
+                <Image src={activity.image} alt="Activity Image" width={500} height={300} className="rounded-full object-cover shadow-lg" priority/>
               </div>
               <div className="w-1/2 text-gray-700 text-lg font-semibold">
                 {activity.text}
@@ -65,6 +65,7 @@ const Content = () => {
                   width={300} // Changed width from 100 to 50
                   height={300} // Changed height from 100 to 50
                   className="object-cover rounded-t-3xl bg-gradient-to-r from-emerald-500 to-lime-500 shadow-lg"
+                  priority
                 />
       </div>
     </div>
