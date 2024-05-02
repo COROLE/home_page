@@ -32,7 +32,7 @@ const activities = [
 
 const Content = () => {
   return (
-    <div className="bg-gradient-to-r from-blue-200 via-blue-100 to-blue-300 w-full rounded-bl-3xl rounded-3xl relative px-4 pt-10 shadow-lg mt-5" style={{ position: 'sticky', top: '100vh', zIndex: 10 }}>
+    <div className="bg-gradient-to-r from-blue-200 via-blue-100 to-blue-300 w-full rounded-bl-3xl rounded-3xl relative px-4 pt-10 shadow-lg mt-5" >
       {activities.map((activity) => (
         activity.reverse ? 
           <FadeInFromRight key={activity.id}>

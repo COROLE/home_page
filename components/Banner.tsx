@@ -18,7 +18,7 @@ import FadeIn from "./FadeIn";
 const Banner = () => {
   return (
     <>
-    <div className="bg-gradient-to-r from-emerald-500 to-lime-500 w-full rounded-bl-3xl rounded-br-3xl relative px-4 py-10 shadow-lg" style={{ position: 'sticky', top: 0, zIndex: 10 }}>
+    <div className="bg-gradient-to-r from-emerald-500 to-lime-500 w-full rounded-bl-3xl rounded-br-3xl relative px-4 py-20 shadow-lg">
         
       <Container>
         <div className="text-white grid md:grid-cols-2 gap-20 place-items-center">
@@ -98,7 +98,9 @@ const Banner = () => {
         </div>
       </Container>
     </div>
+
       <SizedBox />
+      
       </>
   );
 };
