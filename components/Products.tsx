@@ -7,7 +7,7 @@ const ReactPlayer = dynamic(() => import('react-player/lazy'), { ssr: false });
 import phoneBoy from "../public/coroleIcon/phoneBoy.png";
 
 const services = [
-    { id: 1, name: '【アパパネ】【Apapane】', video: 'https://www.youtube.com/watch?v=Zbrph7N_cw0', release: false, description: 'AI×子ども×エンタメ教育アプリアパパネ', description2: 'やらなあかん教育からやりたい教育への一歩', description3: 'AI(スマホ)とお話しして造る君だけの物語。まさに教育効果も期待できることばのマインクラフト' },
+    { id: 1, name: '【アパパネ】【Apapane】', video: 'https://www.youtube.com/watch?v=Zbrph7N_cw0',image:"/apapaneIcon/apapane.png", release: false, description: 'AI×子ども×エンタメ教育アプリアパパネ', description2: 'やらなあかん教育からやりたい教育への一歩', description3: 'AI(スマホ)とお話しして造る君だけの物語。まさに教育効果も期待できることばのマインクラフト' },
   ];
 
 const Products = () => {
@@ -24,12 +24,14 @@ const Products = () => {
                 <ReactPlayer url={service.video} playing={play} controls width='100%' height='100%' style={{position: 'absolute', top: '0', left: '0'}} />
                 { !service.release && <div className="absolute bottom-0 left-0 right-0 bg-orange-300 text-white text-center py-2 font-semibold opacity-90">近日公開</div> }
               </div>
-         
               <button className={`${play ? 'bg-red-500 hover:bg-red-700' : 'bg-green-500 hover:bg-green-700'} text-white font-bold py-2 px-4 rounded mt-3`} onClick={() => setPlay(!play)}>
                 {play ? 'Pause' : 'Play'}
               </button>
               <div className="px-6 py-4">
+                <div className='flex items-center justify-normal'>
                 <div className="font-bold text-3xl mb-3 font-sans text-white">{service.name}</div>
+                <Image src={service.image} alt={service.image} width={50} height={50} className="object-cover shadow-lg" priority />
+                </div>
                 <p className="text-gray-300 text-lg font-sans">
                   {service.description}
                 </p>
