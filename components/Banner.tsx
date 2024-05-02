@@ -7,6 +7,8 @@ import caveChildren from "../public/coroleIcon/caveChildren.webp";
 import spaceChildren from "../public/coroleIcon/spaceChildren.webp";
 import flyingChildren from "../public/coroleIcon/flyingChildren.webp";
 import coroleMinIcon from "../public/coroleIcon/coroleMinIcon.png";
+import SizedBox from "@/components/SizedBox";
+
 
 
 
@@ -15,6 +17,7 @@ import FadeIn from "./FadeIn";
 
 const Banner = () => {
   return (
+    <>
     <div className="bg-gradient-to-r from-emerald-500 to-lime-500 w-full rounded-bl-3xl rounded-br-3xl relative px-4 py-10 shadow-lg" style={{ position: 'sticky', top: 0, zIndex: 10 }}>
         
       <Container>
@@ -95,6 +98,8 @@ const Banner = () => {
         </div>
       </Container>
     </div>
+      <SizedBox />
+      </>
   );
 };
 
