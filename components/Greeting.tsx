@@ -1,7 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 import FadeIn from '@/components/FadeIn';
-import greeting from '../public/personal/greeting.jpeg'; 
+import greeting from '../public/personal/greeting.jpg'; 
 
 const Greeting = () => {
   return (
