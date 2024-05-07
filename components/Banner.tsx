@@ -42,10 +42,10 @@ const Banner = () => {
             </FadeIn>
             <FadeIn>
               <p className="text-base lg:text-lg tracking-wide xl:gap-10 font-sans leading-relaxed">
-                私たち(株)COROLEは4人の学生メンバーで構成されております。<br />
-                関西大学発のスタートアップです。<br />
+                私たち(株)COROLEは4人の<br />
+                学生が立ち上げたスタートアップ企業です。<br />
                 夢の世界につれこむという理念を掲げ、<br />
-                現場のWAO体験を大事に日々精進しています。<br />
+                子どもたちのWAO体験を大事に日々精進しています。<br />
                 
               </p>
               <p className="text-base lg:text-lg tracking-wide xl:gap-10 font-sans leading-relaxed text-yellow-200 mt-3">

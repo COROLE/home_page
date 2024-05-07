@@ -4,7 +4,7 @@ import Image from 'next/image';
 
 
 const achievements = [
-  { id: 1, title: 'Achievement 1', day: '2023/09/11', description: '関西大学、HACK-Academy様主催のアントレプレナーキャンプにてアイデアの価値、ターゲットなどの仮説を洗練し、インキュベーションプログラムにて最大100万円の金銭的支援とAlphaDrive様のメンター支援を約半年間受ける', image: '/event/kandai.jpg', reverse: false },
+  { id: 1, title: 'Achievement 1', day: '2023/09/11', description: '関西大学HACK-Academyの起業プログラム、イノベーションキャンプに参加し、事業の価値創造、ターゲット仮説をブラッシュアップし、インキュベーションプログラムで実証実験を行う。活動費の支援に加えてAlpfaDrive様のメンタリングを半年間受ける', image: '/event/kandai.jpg', reverse: false },
   { id: 2, title: 'Achievement 2', day: '2023/10/08', description: 'Code for Japan様が主催するCCC U-22の大会でCode for Japan賞・Salesforce賞を獲得', image: '/event/ccc.jpg', reverse: true },
   { id: 3, title: 'Achievement 3', day: '2023/09/11', description: 'Skyland Ventures様主催の荒波23秋のイベントで総合優秀賞・Skyland Ventures賞・Buisiness賞を受賞', image: '/event/aranami.jpeg', reverse: false },
   { id: 4, title: 'Achievement 4', day: '2024/03/02', description: 'g0v様のSch001(スクール) とCode for Japan様のCCC U-22合同イベントで台湾大学にてピッチ', image: '/event/taiwan.jpg', reverse: true },

@@ -9,21 +9,21 @@ import smileGirl from "../public/coroleIcon/smileGirl.png";
 const activities = [
   {
     id: 1,
-    text: '数々の幼稚園さまや小学校さまにて実証実験を行っております。',
+    text: '幼稚園や小学校にて実証実験を実施中です。実績: 京阪神の幼稚園さま、兵庫県のオルタナティブスクールさま',
     image: '/coroleIcon/proChildren.webp',
     shadow: true,
     reverse: false
   },
   {
     id: 2,
-    text: '親御さまやお子様方から得られたフィードバックを参考に日々改良を行っております。',
+    text: '実証実験の結果から得られたフィードバックを基に改善を行っています。',
     image: '/coroleIcon/interview.webp',
     shadow: false,
     reverse: true
   },
   {
     id: 3,
-    text: 'エンタメ教育としての教育効果を示すため、\nアカデミアとの連携を進行しております。',
+    text: 'エンタメ教育としての教育効果を示すため、\n教育大学さまとの連携を進行しております。',
     image: '/coroleIcon/academy.webp',
     shadow: true,
     reverse: false
