@@ -43,7 +43,7 @@ const Banner = () => {
             <FadeIn>
               <p className="text-base lg:text-lg tracking-wide xl:gap-10 font-sans leading-relaxed">
                 私たち(株)COROLEは4人の<br />
-                学生が立ち上げたスタートアップ企業です。<br />
+                学生が立ち上げたAIスタートアップ企業です。<br />
                 夢の世界につれこむという理念を掲げ、<br />
                 子どもたちのWAO体験を大事に日々精進しています。<br />
                 
