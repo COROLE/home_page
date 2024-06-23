@@ -58,8 +58,10 @@ const Content = () => {
             </div>
           </FadeInFromLeft>
       ))}
-            <div className='my-40 transform hover:scale-105 transition-transform duration-300'>
-      <ScaleInImage src={pocPoster.src} alt="pocPoster" width={1000} height={400} className="rounded-lg shadow-2xl" priority={true}></ScaleInImage>
+            <div className='my-40 sm:shadow-none shadow-2xl transform hover:scale-105 transition-transform duration-300'>
+      
+        <ScaleInImage src={pocPoster.src} alt="pocPoster" width={500} height={200} className="rounded-lg" priority={true}></ScaleInImage>
+    
       </div>
       <div className='flex justify-center items-end mt-20'>
       <Image
