@@ -2,8 +2,9 @@
 
 import React from 'react';
 import Image from 'next/image';
-import { FadeInFromLeft, FadeInFromRight } from './FadeIn';
+import { FadeInFromLeft, FadeInFromRight, ScaleInImage } from './FadeIn';
 import smileGirl from "../public/coroleIcon/smileGirl.png";
+import pocPoster from "../public/poster/pocPoster.png";
 
 
 const activities = [
@@ -23,7 +24,7 @@ const activities = [
   },
   {
     id: 3,
-    text: 'エンタメ教育としての教育効果を示すため、\n教育大学さまとの連携を進行しております。',
+    text: 'エデュテイメントとしての教育効果を示すため、\n大学さまとの連携を進行しております。',
     image: '/coroleIcon/academy.webp',
     shadow: true,
     reverse: false
@@ -57,7 +58,9 @@ const Content = () => {
             </div>
           </FadeInFromLeft>
       ))}
+      <ScaleInImage src={pocPoster.src} alt="pocPoster" width={600} height={400} className="rounded-lg shadow-2xl" priority={true}></ScaleInImage>
       <div className='mt-10'></div>
+
       <div className='flex justify-center items-end mt-20'>
       <Image
                   src={smileGirl}

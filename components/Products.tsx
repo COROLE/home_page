@@ -7,7 +7,7 @@ const ReactPlayer = dynamic(() => import('react-player/lazy'), { ssr: false });
 import phoneBoy from "../public/coroleIcon/phoneBoy.png";
 
 const services = [
-    { id: 1, name: '【アパパネ】【Apapane】', video: 'https://www.youtube.com/watch?v=Zbrph7N_cw0',image:"/apapaneIcon/apapane.png", release: false, description: 'AI×エンターテイメント教育アプリアパパネ', description2: '受け身な勉強から積極的な学びへの第一歩', description3: 'スマートフォンと対話するだけで子どもたちの物語が作れる。ことばのマインクラフト' },
+    { id: 1, name: '【アパパネ】【Apapane】', video: 'https://youtu.be/FrMQ3fdQR08',image:"/apapaneIcon/apapane.png", release: false, description: 'AI×エンターテイメント教育アプリアパパネ', description2: '受け身な勉強から積極的な学びへの第一歩', description3: 'スマートフォンと対話するだけで子どもたちの物語が作れる。ことばのマインクラフト' },
   ];
 
 const Products = () => {

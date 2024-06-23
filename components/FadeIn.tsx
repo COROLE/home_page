@@ -1,6 +1,7 @@
 "use client"
-import React, { createContext, useContext } from "react";
+import React, { createContext, useContext, useEffect, useState } from "react";
 import { motion } from "framer-motion";
+import Image from 'next/image';
 
 const FadeInStaggerContext = createContext(false);
 const viewport = { once: true, margin: "0px 0px -200px" };
@@ -27,6 +28,27 @@ const FadeIn = (props: any) => {
 };
 
 export default FadeIn;
+
+export const ScaleInImage = ({ src, alt, width, height, className, priority }: { src: string; alt: string; width: number; height: number; className?: string; priority?: boolean }) => {
+  return (
+    <motion.div
+      initial={{ opacity: 0, scale: 0.5 }}
+      whileInView={{ opacity: 1, scale: 1 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.5 }}
+      className={`w-full flex justify-center my-10 ${className}`}
+    >
+      <Image
+        src={src}
+        alt={alt}
+        width={width}
+        height={height}
+        className="rounded-lg shadow-2xl"
+        priority={priority}
+      />
+    </motion.div>
+  );
+};
 
 export const FadeInStagger = ({ faster = false, ...props }) => {
   return (
@@ -83,5 +105,5 @@ export const FadeInRepeat = ({ repeatType = "loop", duration = 1, ...props }) =>
       {...props}
     />
   );
-};
 
+};
