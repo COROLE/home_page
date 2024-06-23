@@ -22,7 +22,7 @@ const Banner = () => {
         
       <Container>
         <div className="text-white grid md:grid-cols-2 gap-20 place-items-center">
-          {/* left */}
+
           <div className="flex flex-col gap-6">
             <FadeIn>
               <h1 className="text-3xl lg:text-5xl xl:text-6xl font-bold tracking-tighter">
@@ -53,7 +53,6 @@ const Banner = () => {
               </p>
             </FadeIn>
             
-            {/* right */}
           </div>
           <div className="w-full relative flex justify-center items-center gap-6">
             <motion.div

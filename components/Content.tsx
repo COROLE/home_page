@@ -2,7 +2,7 @@
 
 import React from 'react';
 import Image from 'next/image';
-import { FadeInFromLeft, FadeInFromRight, ScaleInImage } from './FadeIn';
+import FadeIn, { FadeInFromLeft, FadeInFromRight, ScaleInImage } from './FadeIn';
 import smileGirl from "../public/coroleIcon/smileGirl.png";
 import pocPoster from "../public/poster/pocPoster.png";
 
@@ -58,9 +58,9 @@ const Content = () => {
             </div>
           </FadeInFromLeft>
       ))}
-      <ScaleInImage src={pocPoster.src} alt="pocPoster" width={600} height={400} className="rounded-lg shadow-2xl" priority={true}></ScaleInImage>
-      <div className='mt-10'></div>
-
+            <div className='my-40 transform hover:scale-105 transition-transform duration-300'>
+      <ScaleInImage src={pocPoster.src} alt="pocPoster" width={1000} height={400} className="rounded-lg shadow-2xl" priority={true}></ScaleInImage>
+      </div>
       <div className='flex justify-center items-end mt-20'>
       <Image
                   src={smileGirl}
