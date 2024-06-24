@@ -10,8 +10,8 @@ import SizedBox from "@/components/SizedBox";
 const lilitaOne = Lilita_One({ subsets: ["latin"], weight: ["400"] });
 
 export const metadata: Metadata = {
-  title: "COROLE",
-  description: "Homepage of Inc.COROLE",
+  title: "株式会社COROLE(コロール)",
+  description: "2024年3月に設立され、エデュテイメント(教育娯楽)の領域にAIを活用するという革新的なアプローチを実施しています。学生AIスタートアップ COROLE Inc",
 };
 
 export default function RootLayout({children}: {children: React.ReactNode}) {

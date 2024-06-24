@@ -37,7 +37,7 @@ const Footer = () => {
               <FaGithub />
             </Link>
             <Link
-              href="/"
+              href="https://www.facebook.com/profile.php?id=100063261875068"
               target="_blank"
               className="text-xl hover:text-blueLight cursor-pointer duration-300"
             >
