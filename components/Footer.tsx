@@ -8,7 +8,7 @@ import { TbMinusVertical } from "react-icons/tb";
 
 const Footer = () => {
   const footerList = [
-    { _id: 111, title: "お問い合わせ", link: "#", icon: true },
+    { _id: 111, title: "お問い合わせ", link: "/contact", icon: true },
     { _id: 113, title: "プライバシーポリシー", link: "#", icon: true },
   ];
 
