@@ -7,8 +7,8 @@ import FadeIn from './FadeIn';
 const teamMembers = [
   { name: '上村 温大', image: '/personal/haruto.jpg', role: 'CEO', status: '関西大学商学部',bio: 'エンジニア・AI・ビズデブ・デザイン', color: 'bg-red-500' },
   { name: '上村 翔太', image: '/personal/shota.png', role: 'CSO', status: '関西大学社会学部',bio: 'ビズデブ・データサイエンス', color: 'bg-blue-500' },
-  { name: '樋渡 雅樹', image: '/personal/masaki.JPG', role: 'COO', status: '慶應義塾大学理工学部',bio: 'エンジニア・AI・英語', color: 'bg-green-500' },
-  { name: '池内 晶', image: '/personal/akira.png', role: 'CTO', status: '香川高専情報工学科',bio: 'エンジニア・AI・情報', color: 'bg-yellow-500' }
+  { name: '樋渡 雅樹', image: '/personal/masaki_v2.jpg', role: 'COO', status: '慶應義塾大学大学院理工学研究科',bio: 'エンジニア・AI', color: 'bg-green-500' },
+  { name: '池内 晶', image: '/personal/akira.png', role: 'CTO', status: '関西大学ビジネスデータサイエンス学部',bio: 'エンジニア・AI・情報', color: 'bg-yellow-500' }
 ];
 
 const TeamCard = () => {
