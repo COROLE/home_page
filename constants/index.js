@@ -24,5 +24,10 @@ export const headerListItems = [
       title: "代表挨拶",
       link: "/director",
     },
+    {
+      _id: "106",
+      title: "業務内容・実績",
+      link: "/development",
+    }
   ];
   
